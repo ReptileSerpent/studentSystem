@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="AdminHomeForm">
+  <grid id="27dc6" binding="adminHomePanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="828" height="584"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="f3577" class="javax.swing.JLabel" binding="titleField">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Панель администратора"/>
+        </properties>
+      </component>
+      <tabbedpane id="b5444" binding="tabbedPane">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="ed188" binding="usersPanel" layout-manager="GridLayoutManager" row-count="6" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Пользователи"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="3ef4" class="javax.swing.JList" binding="usersList">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="7" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="4b52a" class="javax.swing.JButton" binding="updateUsersButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="7" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="77" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Обновить"/>
+                </properties>
+              </component>
+              <component id="eb8f3" class="javax.swing.JButton" binding="addUserButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="7" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Добавить пользователя"/>
+                </properties>
+              </component>
+              <component id="90034" class="javax.swing.JTextField" binding="userIdToAddField">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="79d1d" class="javax.swing.JButton" binding="removeUserButton">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Удалить пользователя"/>
+                </properties>
+              </component>
+              <component id="a4ce" class="javax.swing.JTextField" binding="userToDeleteByIdField">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="3a46d" class="javax.swing.JTextField" binding="userEmailToAddField">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Email"/>
+                </properties>
+              </component>
+              <component id="85b0d" class="javax.swing.JTextField" binding="userPasswordToAddField">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Password"/>
+                </properties>
+              </component>
+              <component id="bd55b" class="javax.swing.JTextField" binding="userRoleToAddField">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Role_id"/>
+                </properties>
+              </component>
+              <component id="5aaba" class="javax.swing.JTextField" binding="userStudentsGroupToAddField">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Studentsgroup_id"/>
+                </properties>
+              </component>
+              <component id="9d6e6" class="javax.swing.JTextField" binding="userNameToAddField">
+                <constraints>
+                  <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Name"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="75179" binding="studentGroupsPanel" layout-manager="GridLayoutManager" row-count="6" column-count="12" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Группы"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="a1fce" class="javax.swing.JList" binding="studentGroupsList">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="12" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="d5ff3" class="javax.swing.JButton" binding="updateGroupsButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="77" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Обновить"/>
+                </properties>
+              </component>
+              <component id="dc5f5" class="javax.swing.JButton" binding="addGroupButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Добавить группу"/>
+                </properties>
+              </component>
+              <component id="de46e" class="javax.swing.JButton" binding="deleteGroupButton">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="12" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Удалить группу"/>
+                </properties>
+              </component>
+              <component id="dd8e6" class="javax.swing.JTextField" binding="groupToDeleteByIdField">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="12" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="25449" class="javax.swing.JTextField" binding="groupIdToAddField">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="9da9c" class="javax.swing.JTextField" binding="groupTitleToAddField">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Title"/>
+                </properties>
+              </component>
+              <component id="11e09" class="javax.swing.JTextField" binding="groupOwnerToAddField">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Owner_id"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="81d2c" binding="coursesPanel" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Курсы"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="77de3" class="javax.swing.JList" binding="coursesList">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="4ef71" class="javax.swing.JButton" binding="updateCoursesButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="77" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Обновить"/>
+                </properties>
+              </component>
+              <component id="73895" class="javax.swing.JButton" binding="addCourseButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Добавить курс"/>
+                </properties>
+              </component>
+              <component id="383cd" class="javax.swing.JButton" binding="deleteCourseButton">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Удалить курс"/>
+                </properties>
+              </component>
+              <component id="5b4ac" class="javax.swing.JTextField" binding="courseToDeleteByIdField">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="b4a40" class="javax.swing.JTextField" binding="courseIdToAddField">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="b73cf" class="javax.swing.JTextField" binding="courseNameToAddField">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Name"/>
+                </properties>
+              </component>
+              <component id="11fa2" class="javax.swing.JTextField" binding="courseOwnerToAddField">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Owner_id"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="7e178" binding="mappingPanel" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Соответствия группа-курс"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="6c057" class="javax.swing.JList" binding="mappingsList">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="972f" class="javax.swing.JButton" binding="updateMappingsButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="77" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Обновить"/>
+                </properties>
+              </component>
+              <component id="dc40e" class="javax.swing.JButton" binding="addMappingButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Добавить соответствие"/>
+                </properties>
+              </component>
+              <component id="720df" class="javax.swing.JButton" binding="deleteMappingButton">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Удалить соответствие"/>
+                </properties>
+              </component>
+              <component id="9c656" class="javax.swing.JTextField" binding="mappingToDeleteByIdField">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="d13db" class="javax.swing.JTextField" binding="mappingIdToAddField">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="d6512" class="javax.swing.JTextField" binding="mappingCourseToAddField">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Course_id"/>
+                </properties>
+              </component>
+              <component id="9368d" class="javax.swing.JTextField" binding="mappingGroupToAddField">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="StudentsGroup_id"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="da3ba" binding="tasksPanel" layout-manager="GridLayoutManager" row-count="6" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Задания"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="426ce" class="javax.swing.JList" binding="tasksList">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="32150" class="javax.swing.JButton" binding="updateTasksButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="77" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Обновить"/>
+                </properties>
+              </component>
+              <component id="e51aa" class="javax.swing.JButton" binding="addTaskButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Добавить задание"/>
+                </properties>
+              </component>
+              <component id="32fae" class="javax.swing.JButton" binding="deleteTaskButton">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Удалить задание"/>
+                </properties>
+              </component>
+              <component id="995bd" class="javax.swing.JTextField" binding="taskToDeleteByIdField">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="5bcfc" class="javax.swing.JTextField" binding="taskIdToAddField">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="8a238" class="javax.swing.JTextField" binding="taskTitleToAddField">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Title"/>
+                </properties>
+              </component>
+              <component id="b7a37" class="javax.swing.JTextField" binding="taskDescriptionToAddField">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Description"/>
+                </properties>
+              </component>
+              <component id="207a1" class="javax.swing.JTextField" binding="taskMaxResultToAddField">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="MaxResult"/>
+                </properties>
+              </component>
+              <component id="b3501" class="javax.swing.JTextField" binding="taskCourseToAddField">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Course_id"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="c0982" binding="testsPanel" layout-manager="GridLayoutManager" row-count="6" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Тесты"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="8f56" class="javax.swing.JList" binding="testsList">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="85c82" class="javax.swing.JButton" binding="updateTestsButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="77" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Обновить"/>
+                </properties>
+              </component>
+              <component id="c6421" class="javax.swing.JButton" binding="addTestButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Добавить тест"/>
+                </properties>
+              </component>
+              <component id="d387b" class="javax.swing.JButton" binding="deleteTestButton">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Удалить тест"/>
+                </properties>
+              </component>
+              <component id="306a8" class="javax.swing.JTextField" binding="testToDeleteByIdField">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="9f0f3" class="javax.swing.JTextField" binding="testIdToAddField">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="b6d24" class="javax.swing.JTextField" binding="testTitleToAddField">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Title"/>
+                </properties>
+              </component>
+              <component id="3c4d8" class="javax.swing.JTextField" binding="testTaskToAddField">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Task_id"/>
+                </properties>
+              </component>
+              <component id="22ce6" class="javax.swing.JTextField" binding="testTestFilePathField">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="TestFilePath"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="90f98" binding="testResultsPanel" layout-manager="GridLayoutManager" row-count="6" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Результаты тестов"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="761d9" class="javax.swing.JList" binding="testResultsList">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="3b229" class="javax.swing.JButton" binding="updateTestResultsButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="77" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Обновить"/>
+                </properties>
+              </component>
+              <component id="1911" class="javax.swing.JButton" binding="addTestResultButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Добавить результат теста"/>
+                </properties>
+              </component>
+              <component id="b0d60" class="javax.swing.JButton" binding="deleteTestResultButton">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Удалить результат теста"/>
+                </properties>
+              </component>
+              <component id="22df6" class="javax.swing.JTextField" binding="testResultToDeleteByIdField">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="57d4b" class="javax.swing.JTextField" binding="testResultIdToAddField">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="624cb" class="javax.swing.JTextField" binding="testResultStudentToAddField">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Student_id"/>
+                </properties>
+              </component>
+              <component id="1383c" class="javax.swing.JTextField" binding="testResultTestToAddField">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Test_id"/>
+                </properties>
+              </component>
+              <component id="f5d12" class="javax.swing.JTextField" binding="testResultStateToAddField">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="TestState"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="304bc" binding="gradesPanel" layout-manager="GridLayoutManager" row-count="6" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Оценки"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7f22f" class="javax.swing.JList" binding="gradesList">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="212f2" class="javax.swing.JButton" binding="updateGradesButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="77" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Обновить"/>
+                </properties>
+              </component>
+              <component id="868f3" class="javax.swing.JButton" binding="addGradeButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Добавить оценку"/>
+                </properties>
+              </component>
+              <component id="cf62d" class="javax.swing.JButton" binding="deleteGradeButton">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Удалить оценку"/>
+                </properties>
+              </component>
+              <component id="1310a" class="javax.swing.JTextField" binding="gradeToDeleteByIdField">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="7897d" class="javax.swing.JTextField" binding="gradeIdToAddField">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Id"/>
+                </properties>
+              </component>
+              <component id="321d0" class="javax.swing.JTextField" binding="gradeStudentToAddField">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Student_id"/>
+                </properties>
+              </component>
+              <component id="8eed3" class="javax.swing.JTextField" binding="gradeTaskToAddField">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Task_id"/>
+                </properties>
+              </component>
+              <component id="7264" class="javax.swing.JTextField" binding="gradeGradeToAddField">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="TeacherResult"/>
+                </properties>
+              </component>
+              <component id="3a943" class="javax.swing.JTextField" binding="gradeFilePathToAddField">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="125" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="StudentFilePath"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
